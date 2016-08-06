@@ -1,0 +1,5 @@
+package com.baiju.springcore;
+
+public class EmployeeAnnotation {
+
+}

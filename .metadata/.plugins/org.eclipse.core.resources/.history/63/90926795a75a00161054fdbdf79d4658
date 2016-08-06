@@ -1,0 +1,5 @@
+package com.baiju.springcore.inheritance;
+
+public class Car {
+
+}

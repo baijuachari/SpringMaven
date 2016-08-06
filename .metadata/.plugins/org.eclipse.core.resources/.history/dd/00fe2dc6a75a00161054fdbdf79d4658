@@ -1,0 +1,29 @@
+package com.baiju.springcore.inheritance;
+
+import org.springframework.beans.factory.BeanFactory;
+import org.springframework.beans.factory.xml.XmlBeanFactory;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+import org.springframework.core.io.ClassPathResource;
+import org.springframework.core.io.FileSystemResource;
+
+public class MainClass {
+	//example #5. This uses autowire demo using annotation
+	public static void employeeAddressAutowireAnnotation() {
+      ApplicationContext context = new ClassPathXmlApplicationContext("employee-address-autowire-annotation.xml");
+      EmployeeAnnotation emp = context.getBean("employeeannotation", EmployeeAnnotation.class);
+      
+      System.out.println("Emp.name: "+emp.getName());
+      if (emp.getAddress() != null) {
+    	  System.out.println("Emp.address.city: "+emp.getAddress().getCity());  
+      }      
+	}
+	
+	public static void main(String[] args) {
+		//mainCollections();
+		//studentCollectionsCtrInjection();
+		//employeeAddressAutowire();
+		employeeAddressAutowireAnnotation();
+		
+	}
+}

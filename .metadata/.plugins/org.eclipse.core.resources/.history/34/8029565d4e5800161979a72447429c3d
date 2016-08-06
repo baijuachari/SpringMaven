@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+   <bean id="address" class="com.baiju.springcore.Address">
+       <property name="houseno" value="1234"/>
+       <property name="city" value="Woodstock"/>
+       <property name="state" value="MD"/>
+       <property name="zipcode" value="21163"/>
+   </bean>
+   
+   <bean id="employee" class="com.baiju.springcore.Employee">
+       <property name="empId" value="1234"/>
+       <property name="name" value="Baiju"/>
+       <property name="age" value="12"/>
+       <property name="salary" value="15000"/>
+       <property name="address" ref="address"/>
+   </bean>
+ 
+
+</beans>
