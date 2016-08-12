@@ -68,10 +68,11 @@ public class MainClass {
 	}
 	
 	public static void main(String[] args) {
+		mainInjection();
 		//mainCollections();
 		//studentCollectionsCtrInjection();
 		//employeeAddressAutowire();
-		employeeAddressAutowireAnnotation();
+		//employeeAddressAutowireAnnotation();
 		
 	}
 }

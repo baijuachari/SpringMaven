@@ -1,0 +1,48 @@
+package com.baiju.springcore.lifecycle;
+
+import org.springframework.beans.factory.DisposableBean;
+import org.springframework.beans.factory.InitializingBean;
+
+/**
+ * Spring lifecycle
+ * 1. Instantiate
+ * 2. Populate properties
+ * 3. Set Bean Name
+ * 4. Set Bean factory
+ * 5. Pre initialization
+ * 6. Initialize Bean
+ * 7. Post Initialization
+ * 8. Ready to use
+ * 9. Destory
+ */
+// InitializingBean.afterPropertiesSet() for initialization
+// DisposableBean.destroy() for destroy
+public class HelloBean implements InitializingBean, DisposableBean {
+
+	private String message;
+
+	public HelloBean() {
+		System.out.println("default constructor...");
+    }
+    
+	
+	public void setMessage(String message) {
+		System.out.println("setter message...");
+    	this.message = message;
+    }
+    
+    public String getMessage() {
+    	return message;
+    }
+    // InitializingBean 
+    public void afterPropertiesSet() throws Exception {
+    	System.out.println("afterPropertiesSet() method called......");
+    }
+
+    //DisposableBean
+	public void destroy() throws Exception {
+		System.out.println("destroy() method called......");
+		
+	}
+    
+}

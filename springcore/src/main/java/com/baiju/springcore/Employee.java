@@ -7,7 +7,7 @@ public class Employee {
 	private double salary;
 	private Address address;
 	
-	Employee() {
+	private Employee() {
 		System.out.println("Employee...default..constructor...");
 	}
 	

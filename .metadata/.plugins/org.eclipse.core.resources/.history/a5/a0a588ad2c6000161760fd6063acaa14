@@ -1,0 +1,10 @@
+package com.baiju.springcore.propertiesfiles;
+
+public class PropertyBean {
+	
+	private String driverClass;
+	private String userName;
+	
+	
+
+}
