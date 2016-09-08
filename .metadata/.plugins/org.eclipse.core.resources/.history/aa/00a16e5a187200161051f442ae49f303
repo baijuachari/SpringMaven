@@ -1,0 +1,5 @@
+package com.baiju.springdao.dao;
+
+public class StdentDAO {
+
+}

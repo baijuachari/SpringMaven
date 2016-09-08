@@ -5,7 +5,7 @@
     xsi:schemaLocation="http://www.springframework.org/schema/beans
     http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
 
-   <bean id="employee" class="com.baiju.springcore.Employee">
+   <bean id="employee" name="superemp, favemp, pavan" class="com.baiju.springcore.Employee">
        <property name="empId" value="1234"/>
        <property name="name" value="Baiju"/>
        <property name="age" value="12"/>

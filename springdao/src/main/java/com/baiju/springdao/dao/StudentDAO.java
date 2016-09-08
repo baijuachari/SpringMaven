@@ -1,0 +1,17 @@
+package com.baiju.springdao.dao;
+
+import org.springframework.jdbc.core.JdbcTemplate;
+
+public class StudentDAO {
+	private JdbcTemplate jdbcTemplate;						 
+
+	public void setJdbcTemplate(JdbcTemplate jdbcTemplate) {
+		this.jdbcTemplate = jdbcTemplate;
+	}
+
+	public void insertSudent() {
+		String insertQuery = "insert into STUDENT_DETAIL (NO, NAME, EMAIL, MOBILE) values (101, 'Ramesh','ramesh@gmail.com','22222')";
+		int noOfRowsInserted = jdbcTemplate.update(insertQuery);
+		System.out.println("no of rows inserted: " + noOfRowsInserted);
+	}
+}

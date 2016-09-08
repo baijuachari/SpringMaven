@@ -1,9 +1,0 @@
-package com.baiju.springcore.lifecycle;
-
-public class MainLifeCycle {
-
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
-	}
-}

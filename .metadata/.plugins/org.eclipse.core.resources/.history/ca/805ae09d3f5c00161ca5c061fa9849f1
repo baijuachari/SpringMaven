@@ -1,9 +1,0 @@
-package com.baiju.springcore.fctorymethod;
-
-public class FactoryBean {
-	public static FactoryBean getInstance() {
-		System.out.println("getInstance() called....");
-		return new FactoryBean();
-	}
-
-}

@@ -1,0 +1,7 @@
+package com.baiju.springdao;
+
+public class ClientApp {
+	public static void main(String[] args) {
+		
+	}
+}

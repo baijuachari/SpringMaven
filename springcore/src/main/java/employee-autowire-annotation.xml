@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+	http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+	http://www.springframework.org/schema/context
+	http://www.springframework.org/schema/context/spring-context-3.0.xsd">
+
+	<context:annotation-config></context:annotation-config>
+	
+   <bean id="employee" class="com.baiju.springcore.annotations.Employee">
+       <property name="empId" value="1234"/>
+   </bean>
+ 
+   <bean id="address1" class="com.baiju.springcore.annotations.Address">
+       <property name="houseno" value="1234"/>
+       <property name="city" value="Woodstock"/>
+       <property name="state" value="MD"/>
+       <property name="zipcode" value="21163"/>
+   </bean>
+   
+     <bean id="address2" class="com.baiju.springcore.annotations.Address">
+       <property name="houseno" value="5678"/>
+       <property name="city" value="Silver Spring"/>
+       <property name="state" value="MD"/>
+       <property name="zipcode" value="20906"/>
+   </bean>
+   
+</beans>

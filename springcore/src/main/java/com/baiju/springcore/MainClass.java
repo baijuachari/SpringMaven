@@ -67,12 +67,42 @@ public class MainClass {
       }      
 	}
 	
+	//example #6. This uses innerBean
+	public static void employeeAddressInnerBean() {
+      ApplicationContext context = new ClassPathXmlApplicationContext("employee-address-innerbean.xml");
+      EmployeeAnnotation emp = context.getBean("employeeannotation", EmployeeAnnotation.class);
+      
+      System.out.println("Emp.name: "+emp.getName());
+      if (emp.getAddress() != null) {
+    	  System.out.println("Emp.address.city: "+emp.getAddress().getCity());  
+      }      
+	}
+	
+	//example #7. Alias example
+	public static void aliasExample() {
+      ApplicationContext context = new ClassPathXmlApplicationContext("hello-injection.xml");
+      //getBean() expects id or names used in aliases
+      
+      Employee emp = context.getBean("employee", Employee.class);
+      
+      System.out.println("Emp.name: "+emp.getName());
+      System.out.println("Emp.address.city: "+emp.getAddress().getCity());
+      
+      String[] aliases = context.getAliases("superemp");
+      for (String str: aliases) {
+    	  System.out.println("Aliases: "+str); 
+      }
+        
+	}
+	
 	public static void main(String[] args) {
-		mainInjection();
+		//mainInjection();
 		//mainCollections();
 		//studentCollectionsCtrInjection();
 		//employeeAddressAutowire();
 		//employeeAddressAutowireAnnotation();
+		//employeeAddressInnerBean();
+		aliasExample();
 		
 	}
 }

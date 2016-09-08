@@ -50,6 +50,7 @@
 	</section>
 	<section name="MavenProjectWizardLocationPage">
 		<list key="location">
+			<item value="C:\Baiju\GitHub\SpringMaven"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
@@ -62,6 +63,7 @@
 	</section>
 	<section name="Maven2ProjectWizardArchifactPage">
 		<list key="package">
+			<item value="com.baiju.springdao"/>
 			<item value="com.baiju.springcore"/>
 			<item value="com.baiju.mavensamples"/>
 			<item value="com.baiju.mavensamples.spring"/>
@@ -71,6 +73,7 @@
 			<item value="com.baiju.mavensamples"/>
 		</list>
 		<list key="artifactId">
+			<item value="springdao"/>
 			<item value="springcore"/>
 			<item value="spring"/>
 		</list>

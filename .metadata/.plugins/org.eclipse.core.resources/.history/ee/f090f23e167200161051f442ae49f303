@@ -1,0 +1,33 @@
+package com.baiju.springdao;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+
+public class ClientApp {
+	public static void main(String[] args) {
+		//1. load the driver
+				Class.forName("org.postgresql.Driver");
+				
+				//2. get connection
+				Connection connection = DriverManager.getConnection("jdbc:postgresql://localhost:5432/postgres", "postgres", "zaq1xsw2");
+				System.out.println(connection);
+				
+				//3. Create Statement Object
+				Statement statement = connection.createStatement();
+				
+				//4. write SQL
+				String sql = "select * from employees";
+				
+				ResultSet rs = statement.executeQuery(sql);
+				
+				//5. Iterate thru the ResultSet set
+				while(rs.next()) {
+					String id = rs.getString("id");
+					String name = rs.getString("name");
+					System.out.println("ID: " + id + " NAME: " + name);
+				}
+	}
+}

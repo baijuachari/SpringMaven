@@ -1,0 +1,10 @@
+package com.baiju.springdao;
+
+public class PropertyBean {
+	
+	private String driverClass;
+	private String URL;
+	private String username;
+	private String password;
+	
+}

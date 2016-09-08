@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;employee-address-autowire-annotation.xml&apos; to &apos;employee-address-autowire-annotation.xml&apos;&#x0D;&#x0A;- Original project: &apos;springcore&apos;&#x0D;&#x0A;- Destination element: &apos;employee-address-autowire-annotation.xml&apos;&#x0D;&#x0A;- Original element: &apos;employee-address-autowire-annotation.xml&apos;" description="Copy file" element1="src/main/java/employee-address-autowire-annotation.xml" files="1" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1471308509575" target="/springcore/src/main/java/employee-address-autowire-annotation.xml" units="0" version="1.0"/>
+</session>

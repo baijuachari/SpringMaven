@@ -11,4 +11,13 @@
 <fullyQualifiedTypeName name="org.springframework.context.ApplicationContextAware"/>
 <fullyQualifiedTypeName name="org.springframework.beans.factory.config.BeanPostProcessor"/>
 <fullyQualifiedTypeName name="org.springframework.beans.factory.config.PreferencesPlaceholderConfigurer"/>
+<fullyQualifiedTypeName name="com.baiju.springcore.multiconf.daos.LoginDAO"/>
+<fullyQualifiedTypeName name="com.baiju.springcore.multiconf.service.LoginService"/>
+<fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Required"/>
+<fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
+<fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Qualifier"/>
+<fullyQualifiedTypeName name="java.sql.Connection"/>
+<fullyQualifiedTypeName name="com.mysql.cj.api.jdbc.Statement"/>
+<fullyQualifiedTypeName name="org.springframework.jdbc.core.JdbcTemplate"/>
+<fullyQualifiedTypeName name="com.baiju.springdao.dao.StudentDAO"/>
 </qualifiedTypeNameHistroy>
